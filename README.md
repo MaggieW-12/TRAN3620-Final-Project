@@ -1,6 +1,6 @@
 # TRAN3620-Final-Project
 
-## Humor Across the Line
+## Jokes Between Chinese and English
 
 An English-Chinese corpus explorer for the translation of humor in subtitles.
 
