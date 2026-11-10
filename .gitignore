@@ -1,0 +1,8 @@
+# Raw corpora and extracted alignment files are large and reproducible.
+data/raw/
+
+# Local tooling
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db

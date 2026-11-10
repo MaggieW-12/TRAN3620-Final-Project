@@ -1,0 +1,46 @@
+{
+  "corpus": "OpenSubtitles v2024 en-zh_CN",
+  "source_url": "https://object.pouta.csc.fi/OPUS-OpenSubtitles/v2024/moses/en-zh_CN.txt.zip",
+  "source_sha256": "ac2fd8c041f3b03dde29a683d3c225587188ec70f61e85111d75463a8f9089fe",
+  "input_method": "extracted aligned text files",
+  "retrieved": "2026-11-10",
+  "seed": 3620,
+  "sample_method": "Use seed 3620 to draw 300,000 distinct aligned line numbers uniformly from all 22,394,812 pairs in the official Moses archive. Apply the predeclared topical filters to that screening sample, then sort passing entries by SHA-256(seed:line_no) and retain the lowest 500 hashes. This is a two-stage reproducible random sample of the filtered humorous-dialogue frame, not a hand-picked selection.",
+  "screen_size": 300000,
+  "screen_ids_with_data": 300000,
+  "filters": [
+    "Both aligned sides non-empty",
+    "English contains Latin letters; Chinese contains CJK characters",
+    "English: 5-32 words",
+    "Chinese: 3-100 CJK characters",
+    "Fixed humor-cue lexicon matches the English line",
+    "Exact duplicate aligned pairs removed"
+  ],
+  "total_aligned_pairs": 22394812,
+  "passing_humor_candidates_after_dedup": 878,
+  "humor_cue_hits": {
+    "joke": 241,
+    "funny": 357,
+    "laughter": 250,
+    "play_signal": 57
+  },
+  "rejections": {
+    "no_explicit_humor_cue": 159366,
+    "english_length": 122015,
+    "character_limit": 710,
+    "target_not_predominantly_chinese": 9704,
+    "language_script_check": 6391,
+    "chinese_length": 918,
+    "empty_side": 9,
+    "duplicate_english_source": 9
+  },
+  "selected": 500,
+  "checked": 50,
+  "category_counts": {
+    "compression-neutralization": 85,
+    "direct-retention": 348,
+    "explicitation": 2,
+    "functional-equivalence": 65
+  },
+  "generated_date": "2026-11-10"
+}
