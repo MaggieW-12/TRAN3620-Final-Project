@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Learning report for an English-Chinese subtitle humor corpus."
+    >
+    <title>Learning Report | After the Punchline</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="site/styles/styles.css">
+  </head>
+  <body data-page="report">
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">譯</span>
+        <span class="brand-copy">
+          <strong>After the Punchline</strong>
+          <span data-i18n="brandSub">English–Chinese humor corpus</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" data-i18n="navExplore">Explore</a>
+        <a class="is-current" href="report.html" data-i18n="navReport">
+          Learning report
+        </a>
+        <a href="codebook.html" data-i18n="navCodebook">Codebook</a>
+        <a href="ai-use.html" data-i18n="navAi">AI use</a>
+      </nav>
+      <div class="language-switch" role="group" aria-label="Interface language">
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-set-lang="zh" aria-pressed="false">繁</button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="document-hero">
+        <p class="document-kicker" data-i18n="reportKicker">Learning report</p>
+        <h1 data-i18n="reportTitle">The joke is only half the translation</h1>
+        <p class="lede" data-i18n="reportLede">
+          A study of 500 English-Chinese subtitle exchanges, from an explicit joke
+          cue to its translated afterlives.
+        </p>
+      </section>
+
+      <div class="document-layout">
+        <nav class="document-toc" aria-label="Report contents">
+          <strong data-i18n="tocLabel">On this page</strong>
+          <a href="#origin" data-i18n="originNav">Origin</a>
+          <a href="#background" data-i18n="backgroundNav">Background</a>
+          <a href="#gap" data-i18n="gapNav">Gap</a>
+          <a href="#questions" data-i18n="questionsNav">Questions</a>
+          <a href="#method" data-i18n="methodNav">Method</a>
+          <a href="#analysis" data-i18n="analysisNav">Analysis</a>
+          <a href="#conclusion" data-i18n="conclusionNav">Conclusion</a>
+          <a href="#reflection" data-i18n="reflectionNav">Reflection</a>
+          <a href="#references" data-i18n="referencesNav">References</a>
+        </nav>
+
+        <article class="prose">
+          <section id="origin">
+            <div class="lang-en">
+              <h2>Origin</h2>
+              <p class="lead">
+                I chose jokes because they expose the limit of the reassuring
+                question: “Did the translator keep the words?” A joke may keep
+                every word and still stop being funny.
+              </p>
+              <p>
+                English-Chinese subtitle dialogue offered a good test case. It is
+                conversational, time-constrained, frequently idiomatic, and much
+                less studied than literary wordplay in English-Chinese
+                translation. The topic also made the corpus interesting to
+                explore: a visitor can begin with <em>joke</em> or <em>笑</em>,
+                move through a network of cue terms, and end with the subtitle
+                line that motivated the pattern.
+              </p>
+              <p>
+                The final title, “After the Punchline,” reflects the object of
+                study. I am not trying to decide whether a translation is
+                “correct.” I am asking what remains visible to a Chinese viewer
+                after the English cue has been moved, rewritten, explained, or
+                removed.
+              </p>
+            </div>
+            <div class="lang-zh">
+              <h2>緣起</h2>
+              <p class="lead">
+                我選擇笑話，因為它暴露了「譯者有沒有保留字面」這個安心問題的限制：
+                一句笑話可以保留每一個詞，卻不再好笑。
+              </p>
+              <p>
+                英漢字幕對話適合檢驗這個問題。它口語化、受時間限制、充滿慣用語，
+                而且比英漢文學雙關研究得更少。這個題目也適合建立可探索的語料：
+                訪客可以從 <em>joke</em> 或「笑」開始，沿著幽默提示的關係網絡移動，
+                最後回到造成這項模式的字幕行。
+              </p>
+              <p>
+                最終標題「笑聲之後」指向研究對象。我無意判定某個譯法是否「正確」，
+                而是要問：當英語提示被移動、改寫、解釋或刪除之後，中文觀眾仍看得見什麼？
+              </p>
+            </div>
+          </section>
+
+          <section id="background">
+            <div class="lang-en">
+              <h2>Background</h2>
+              <p>
+                Translation studies often separates <em>direct</em> procedures
+                such as borrowing, calque, and literal translation from
+                <em>oblique</em> procedures such as transposition, modulation,
+                equivalence, and adaptation (Vinay &amp; Darbelnet, 1995). Mona
+                Baker’s work on equivalence is useful here because it shifts
+                attention from isolated words to meaning, idioms, and pragmatic
+                effect across levels of language (Baker, 2018).
+              </p>
+              <p>
+                Subtitles add a second constraint: space and reading time.
+                Gottlieb describes condensation and substitution among the
+                options available to subtitlers (Gottlieb, 1992). Humor raises
+                the stakes because its effect depends on shared knowledge,
+                timing, and the audience’s expectation of a punchline
+                (Chiaro, 2010; Delabastita, 1996).
+              </p>
+              <p>
+                This project therefore treats translation strategy as an
+                observable relation between an English humor cue and the Chinese
+                line, not as a judgement about a translator’s talent.
+              </p>
+            </div>
+            <div class="lang-zh">
+              <h2>背景</h2>
+              <p>
+                翻譯研究通常區分「直接」程序與「間接」程序：前者包括借用、仿譯、
+                直譯，後者包括詞性轉換、調節、等值與改編（Vinay &amp; Darbelnet,
+                1995）。Mona Baker 的等值研究在此很有用，因為它把注意力從孤立詞語
+                轉向語言各層次的意義、慣用語與語用效果（Baker, 2018）。
+              </p>
+              <p>
+                字幕還有第二重限制：空間與閱讀時間。Gottlieb 把壓縮與替代列為
+                字幕譯者可用的方法（Gottlieb, 1992）。幽默更棘手，因為效果依賴
+                共享知識、節奏，以及觀眾對笑點的期待（Chiaro, 2010;
+                Delabastita, 1996）。
+              </p>
+              <p>
+                因此，本計畫把翻譯策略視為英語幽默提示與中文行之間可觀察的關係，
+                而不是對譯者能力的判決。
+              </p>
+            </div>
+          </section>
+
+          <section id="gap">
+            <div class="lang-en">
+              <h2>Gap</h2>
+              <p>
+                Existing English-Chinese humor studies often focus on a small set
+                of literary puns or one translator’s choices. Open subtitle
+                corpora are large, but humor is not a standard metadata field.
+                The gap is therefore practical as well as theoretical: how can a
+                student build a reproducible, inspectable sample of humorous
+                subtitle dialogue and connect each pattern back to a visible cue?
+              </p>
+              <p>
+                This project does not claim to solve humor detection. It provides a
+                transparent keyword-based screening frame, a theory-linked
+                codebook, and an interface for questioning both.
+              </p>
+            </div>
+            <div class="lang-zh">
+              <h2>研究缺口</h2>
+              <p>
+                既有的英漢幽默研究常集中於少量文學雙關，或單一譯者的選擇。
+                開放字幕語料雖大，卻沒有標準的「幽默」中介資料欄位。因此，
+                研究缺口既是理論的，也是實作的：學生如何建立可重現、可檢查的
+                幽默字幕對話樣本，並把每項模式連結回看得見的提示？
+              </p>
+              <p>
+                本計畫不宣稱解決幽默辨識問題。我提供的是一套透明的關鍵詞篩選框、
+                與理論連結的編碼手冊，以及一個能讓兩者都受到質疑的介面。
+              </p>
+            </div>
+          </section>
+
+          <section id="questions">
+            <div class="lang-en">
+              <h2>Questions</h2>
+              <ol>
+                <li>
+                  Which translation strategies dominate a sample of English-Chinese
+                  subtitle exchanges with explicit humor cues?
+                </li>
+                <li>
+                  Does the probability of reworking the line change by cue type,
+                  such as <em>joke/kidding</em>, laughter, or <em>funny/absurd</em>?
+                </li>
+                <li>
+                  What can linked cue-strategy views reveal that a table of 500
+                  lines cannot show on its own?
+                </li>
+              </ol>
+            </div>
+            <div class="lang-zh">
+              <h2>研究問題</h2>
+              <ol>
+                <li>在帶有明確幽默提示的英漢字幕樣本中，哪些翻譯策略最常見？</li>
+                <li>
+                  改寫句子的可能性是否因提示類型而改變，例如「笑話／開玩笑」、
+                  「笑聲」或「好笑／荒謬」？
+                </li>
+                <li>互相連結的提示與策略視圖，能揭示五百行表格本身看不見的什麼？</li>
+              </ol>
+            </div>
+          </section>
+
+          <section id="method">
+            <div class="lang-en">
+              <h2>Method</h2>
+              <div class="metric-grid">
+                <div class="metric-card">
+                  <strong>22,394,812</strong>
+                  <span>aligned source pairs</span>
+                </div>
+                <div class="metric-card">
+                  <strong>300,000</strong>
+                  <span>random screening pairs</span>
+                </div>
+                <div class="metric-card">
+                  <strong>878</strong>
+                  <span>qualifying humor candidates</span>
+                </div>
+                <div class="metric-card">
+                  <strong>500</strong>
+                  <span>final random sample</span>
+                </div>
+              </div>
+              <p>
+                I started from the OpenSubtitles v2024 English-Simplified Chinese
+                Moses archive distributed by OPUS, retrieved on 10 November 2026.
+                The archive SHA-256 is recorded in the
+                <a href="data/processed/sampling_metadata.json">sampling metadata</a>.
+                Using seed 3620, I drew 300,000 distinct aligned line numbers
+                uniformly from all 22,394,812 pairs. This screening sample keeps
+                the procedure reproducible without scanning only the opening
+                block of a massive subtitle collection.
+              </p>
+              <p>
+                A pair had to contain non-empty text, Latin letters in English and
+                CJK characters in Chinese, 5–32 English words, 3–100 Chinese CJK
+                characters, and a match to a fixed humor-cue lexicon. I removed
+                exact duplicate source lines and excluded targets where Latin text
+                made up an excessive share of the line. The 878 qualifying
+                candidates were ranked by a second fixed hash, and the lowest 500
+                hashes form the corpus. This prevents “first 500” or “favourite
+                500” selection.
+              </p>
+              <p>
+                Before full coding, I tested four draft categories on 30 entries.
+                The pilot exposed two problems: <em>as if</em> generated many
+                non-humorous conditional phrases, and code-switched or
+                English-dominant targets produced noisy alignments. I removed
+                <em>as if</em> from the humor cues, added a target-script threshold,
+                and retained the codebook rules as a hierarchy. The full
+                change log appears on the <a href="codebook.html">codebook page</a>.
+              </p>
+              <p>
+                I randomly sampled 50 of the final entries and checked both lines
+                against the exact archive line number. All 50 texts matched the
+                source, with zero transcription mismatches; those entries are
+                marked <code>human_checked=yes</code>. This check establishes
+                traceability, not semantic perfection. Some volunteer subtitle
+                alignments remain context-dependent or awkward, which is reported
+                as a limitation rather than hidden.
+              </p>
+            </div>
+            <div class="lang-zh">
+              <h2>方法</h2>
+              <div class="metric-grid">
+                <div class="metric-card">
+                  <strong>22,394,812</strong>
+                  <span>對齊來源句對</span>
+                </div>
+                <div class="metric-card">
+                  <strong>300,000</strong>
+                  <span>隨機初篩句對</span>
+                </div>
+                <div class="metric-card">
+                  <strong>878</strong>
+                  <span>符合條件的幽默候選</span>
+                </div>
+                <div class="metric-card">
+                  <strong>500</strong>
+                  <span>最終隨機樣本</span>
+                </div>
+              </div>
+              <p>
+                我以 OPUS 發佈的 OpenSubtitles v2024 英漢摩西格式檔案為起點，
+                擷取日期為 2026 年 11 月 10 日；原始檔 SHA-256 記錄於
+                <a href="data/processed/sampling_metadata.json">取樣中介資料</a>。
+                我以種子 3620，從全部 22,394,812 組句對均勻抽取 300,000 個不同的
+                對齊行號。這個初篩樣本讓程序可重現，也避免只掃描龐大語料的開頭區塊。
+              </p>
+              <p>
+                句對必須兩側非空、英語含拉丁字母、中文含 CJK 字元、英語為 5–32 詞、
+                中文為 3–100 個 CJK 字元，並符合固定的幽默提示詞表。我移除完全重複的
+                英語來源行，也排除拉丁文字比例過高的目標行。878 個合格候選再依第二個
+                固定雜湊值排序，取最低的 500 筆。這避免「前 500 筆」或「最喜歡的 500 筆」
+                式選樣。
+              </p>
+              <p>
+                全面編碼前，我先以 30 筆測試四個草擬類別。初測暴露兩個問題：
+                <em>as if</em> 會產生大量非幽默條件句；語碼混用或英語為主的目標行
+                會造成雜訊對齊。我從幽默提示中移除 <em>as if</em>，加入目標語言文字
+                比例門檻，並保留編碼手冊的層級規則。完整修訂紀錄見
+                <a href="codebook.html">編碼手冊</a>。
+              </p>
+              <p>
+                我從最終語料隨機抽取 50 筆，依原始檔的準確行號核對兩側文本。
+                50 筆全部與來源相符，沒有轉錄錯誤；這些項目標記為
+                <code>human_checked=yes</code>。這項核對證明可追溯性，不代表語意完美。
+                部分志願者字幕對齊仍依賴語境或略顯生硬；報告把這點列為限制，而非隱藏。
+              </p>
+            </div>
+          </section>
+
+          <section id="analysis">
+            <div class="lang-en">
+              <h2>Analysis</h2>
+              <p class="lead">
+                The headline finding is conservative translation: direct retention
+                is the largest category. But the aggregate hides a sharper
+                difference by cue type.
+              </p>
+              <div class="report-chart" id="report-chart">
+                <h3>Strategy distribution<br><small>n = 500</small></h3>
+                <div id="report-bars"></div>
+              </div>
+              <h3>“From cue to strategy”</h3>
+              <p>
+                The Sankey view shows that 348 of 500 entries (69.6%) retain the
+                humor cue without a major explanatory addition or substitution.
+                Compression or neutralization is second at 85 (17.0%), followed by
+                functional equivalence at 65 (13.0%). Explicitation is rare: only
+                two entries (0.4%). This suggests that in this screened subtitle
+                frame, literal or near-literal transfer is common, but it is not
+                uniform across the cue types.
+              </p>
+              <h3>“Where the pressure falls”</h3>
+              <p>
+                The heatmap makes the cue-level contrast visible. Of 208
+                <em>funny/absurd</em> entries, 174 (83.7%) are direct. Of 122
+                laughter entries, 97 (79.5%) are direct. The pattern changes for
+                explicit joke signals: only 65 of 136 <em>joke/kidding</em> entries
+                (47.8%) are direct, while 50 (36.8%) use functional equivalence.
+                Play signals are most likely to be compressed or neutralized
+                (14 of 34, 41.2%). A likely explanation is that “funny” and
+                laughter can remain as evaluative cues, while an explicit joke
+                often requires the translator to rebuild the interaction rather
+                than merely carry a word.
+              </p>
+              <h3>“The translation network”</h3>
+              <p>
+                The force network maps English cue categories to Chinese cue
+                families. It is an exploratory linkage view, not a complete map of
+                omission. In 204 of 500 entries the target has no explicit Chinese
+                cue in my lexicon, so those lines are absent from the network and
+                remain visible in the heatmap as compression/neutralization or
+                direct rendering. The network is most useful for tracing recurring
+                correspondences, such as joke-family terms connecting to both
+                direct and functionally adapted Chinese expressions.
+              </p>
+              <h3>“Every line has a trail”</h3>
+              <p>
+                The linked data grid is the accountability layer. Every chart click
+                becomes a visible subset, and the table exposes the sentence pair,
+                category, check status, source line number, and classification
+                note. This matters because a persuasive chart can still conceal a
+                weak example. The table makes that risk inspectable.
+              </p>
+              <p>
+                <a class="button button-dark" href="index.html#explorer">
+                  Return to the interactive analysis
+                </a>
+              </p>
+            </div>
+            <div class="lang-zh">
+              <h2>分析</h2>
+              <p class="lead">
+                最重要的發現是「保守翻譯」：直接保留是最大類別。但整體數字掩蓋了
+                不同提示類型之間的鮮明差異。
+              </p>
+              <div class="report-chart" id="report-chart">
+                <h3>翻譯策略分布<br><small>n = 500</small></h3>
+                <div id="report-bars"></div>
+              </div>
+              <h3>「從提示到策略」</h3>
+              <p>
+                桑基圖顯示，五百筆中有 348 筆（69.6%）在沒有大幅增譯或替代的情況下
+                保留幽默提示。壓縮／中和居次，共 85 筆（17.0%）；功能等值為 65 筆
+                （13.0%）；明晰化極少，只有 2 筆（0.4%）。這表示在此次篩選的字幕
+                區塊中，直譯或近直譯相當常見，但並非各類提示都相同。
+              </p>
+              <h3>「張力落在哪裡」</h3>
+              <p>
+                熱圖呈現提示層面的差異。208 筆「好笑／荒謬」中，174 筆（83.7%）
+                為直接保留；122 筆笑聲中，97 筆（79.5%）為直接保留。明確笑話訊號
+                則不同：136 筆「笑話／開玩笑」中，只有 65 筆（47.8%）直接保留，
+                另有 50 筆（36.8%）使用功能等值。遊戲訊號最可能被壓縮或中和
+                （34 筆中的 14 筆，41.2%）。一個合理解釋是：「好笑」與笑聲可以
+                作為評價性提示直接保留，而明確笑話往往要求譯者重建互動，而非只移動詞語。
+              </p>
+              <h3>「翻譯關係網絡」</h3>
+              <p>
+                力導向網絡把英語提示類別連結到漢語提示類別。這是探索性的關係視圖，
+                不是完整的省略地圖。五百筆中有 204 筆的目標行不含詞表所辨識的明確
+                漢語提示，因此不顯示於網絡，但仍在熱圖中呈現為壓縮／中和或直接保留。
+                網絡最適合追蹤反覆出現的對應，例如笑話類詞語如何同時連向直接與
+                功能改寫的中文表達。
+              </p>
+              <h3>「每一行都有來源線索」</h3>
+              <p>
+                互相連動的資料表是問責層。每次點擊圖表都會變成可見的子集，表格則
+                展示句對、類別、核對狀態、來源行號與分類說明。這很重要，因為有說服力
+                的圖表仍可能掩蓋薄弱例子；表格讓這種風險可被檢查。
+              </p>
+              <p>
+                <a class="button button-dark" href="index.html#explorer">
+                  回到互動分析
+                </a>
+              </p>
+            </div>
+          </section>
+
+          <section id="conclusion">
+            <div class="lang-en">
+              <h2>Conclusion</h2>
+              <p>
+                In these 500 subtitle exchanges, humor survives most visibly as
+                direct wording, but explicit joke cues create more pressure to
+                change the expression. The strongest result is not a universal law
+                of translation. It is a discipline of comparison: search the cue,
+                compare the line, classify the relation, and inspect the source.
+              </p>
+              <p>
+                The project achieves three things: a reproducible 500-entry corpus,
+                an interactive explorer in which every visual responds to the same
+                state, and a documented interpretation that distinguishes evidence
+                from conjecture.
+              </p>
+            </div>
+            <div class="lang-zh">
+              <h2>結論</h2>
+              <p>
+                在這五百組字幕對話中，幽默最常以直接措辭留下；但明確的笑話提示
+                帶來更大的改寫壓力。最強的結果不是一條普遍翻譯定律，而是一種比較紀律：
+                搜尋提示、比較原譯行、分類關係，再檢查來源。
+              </p>
+              <p>
+                本計畫完成三件事：可重現的五百筆語料；所有視圖都回應同一篩選狀態的
+                互動探索器；以及把證據與推測分開的公開詮釋。
+              </p>
+            </div>
+          </section>
+
+          <section id="reflection">
+            <div class="lang-en">
+              <h2>Reflection</h2>
+              <p>
+                The hardest part was not downloading data or drawing charts. It was
+                keeping a large corpus from looking more certain than it is. Humor
+                depends on context that a single aligned line often removes. Keyword
+                screening creates recall and precision problems at the same time:
+                it misses jokes without cue words and admits phrases that mention
+                humor without performing it.
+              </p>
+              <p>
+                If I began again, I would pilot two independent human annotators on
+                30 entries before automation and calculate agreement. I would also
+                build a context window of the surrounding subtitle lines, because
+                “funny” in one line may only be understandable in the next. In this
+                version, I chose a transparent limitation over a false claim of
+                complete semantic coding.
+              </p>
+              <p>
+                AI was useful for streaming the archive, applying filters
+                consistently, building the site, and producing testable summaries.
+                It could not decide which line a human viewer actually finds funny,
+                and it could not take responsibility for the final categories. Those
+                remain interpretive decisions that need human review.
+              </p>
+            </div>
+            <div class="lang-zh">
+              <h2>反思</h2>
+              <p>
+                最難的部分不是下載資料或畫圖，而是避免讓龐大語料看起來比實際更確定。
+                幽默依賴語境，而單一對齊行往往移除語境。關鍵詞篩選同時產生召回率與
+                精確率問題：它會漏掉沒有提示詞的笑話，也會納入只是提及幽默、卻沒有
+                實際產生幽默效果的句子。
+              </p>
+              <p>
+                如果重新開始，我會在自動化前請兩位獨立人工標註者先測試約 30 筆，
+                並計算一致性。我也會建立包含前後字幕行的語境視窗，因為某行的
+                「好笑」可能要到下一行才成立。在這個版本中，我選擇公開限制，
+                而不是虛稱已完成完整的語意編碼。
+              </p>
+              <p>
+                AI 對串流讀取檔案、一致套用篩選、建立網站與產出可測試摘要很有用。
+                但它不能決定人類觀眾實際覺得哪一行好笑，也不能替最終類別負責。
+                這些仍是需要人工審查的詮釋判斷。
+              </p>
+            </div>
+          </section>
+
+          <section id="references">
+            <div class="lang-en">
+              <h2>References</h2>
+              <ul class="reference-list">
+                <li>
+                  Baker, M. (2018). <em>In Other Words: A Coursebook on
+                  Translation</em> (3rd ed.). Routledge.
+                </li>
+                <li>
+                  Chiaro, D. (2010). Translation and humour. In Y. Gambier &amp;
+                  L. van Doorslaer (Eds.), <em>Handbook of Translation Studies</em>
+                  (Vol. 1, pp. 140–145). John Benjamins.
+                </li>
+                <li>
+                  Delabastita, D. (1996). Introduction. In D. Delabastita (Ed.),
+                  <em>Wordplay and Translation</em> (pp. 127–139). Routledge.
+                </li>
+                <li>
+                  Gottlieb, H. (1992). Subtitling: A new university discipline. In
+                  C. Dollerup &amp; A. Loddegaard (Eds.), <em>Teaching Translation
+                  and Interpreting</em> (pp. 161–170). John Benjamins.
+                </li>
+                <li>
+                  Lison, P., &amp; Tiedemann, J. (2016). OpenSubtitles2016:
+                  Extracting large parallel corpora from movie and TV subtitles.
+                  <em>Proceedings of LREC 2016</em>.
+                </li>
+                <li>
+                  Vinay, J.-P., &amp; Darbelnet, J. (1995).
+                  <em>Comparative Stylistics of French and English: A Methodology
+                  for Translation</em>. John Benjamins.
+                </li>
+              </ul>
+            </div>
+            <div class="lang-zh">
+              <h2>參考文獻</h2>
+              <ul class="reference-list">
+                <li>Baker, M. (2018). <em>In Other Words</em> (3rd ed.). Routledge.</li>
+                <li>
+                  Chiaro, D. (2010). Translation and humour. In
+                  <em>Handbook of Translation Studies</em> (Vol. 1, pp. 140–145).
+                  John Benjamins.
+                </li>
+                <li>
+                  Delabastita, D. (1996). Introduction. In
+                  <em>Wordplay and Translation</em> (pp. 127–139). Routledge.
+                </li>
+                <li>
+                  Gottlieb, H. (1992). Subtitling: A new university discipline.
+                  In <em>Teaching Translation and Interpreting</em> (pp. 161–170).
+                  John Benjamins.
+                </li>
+                <li>
+                  Lison, P., &amp; Tiedemann, J. (2016). OpenSubtitles2016.
+                  <em>Proceedings of LREC 2016</em>.
+                </li>
+                <li>
+                  Vinay, J.-P., &amp; Darbelnet, J. (1995).
+                  <em>Comparative Stylistics of French and English</em>.
+                  John Benjamins.
+                </li>
+              </ul>
+            </div>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <span class="footer-mark" aria-hidden="true">譯</span>
+        <h2>After the Punchline</h2>
+        <p data-i18n="footerLine">
+          English–Chinese humor translation in subtitles.
+        </p>
+      </div>
+      <div class="footer-meta">
+        <p>
+          <span data-i18n="sourceLabel">Source</span>
+          <a href="https://opus.nlpl.eu/legacy/OpenSubtitles-v2024.php">
+            OpenSubtitles v2024 / OPUS
+          </a>
+        </p>
+        <p>TRAN3620 Translation Technology in the Age of AI · 2026</p>
+      </div>
+    </footer>
+
+    <script src="site/scripts/i18n.js"></script>
+    <script src="site/scripts/report.js"></script>
+  </body>
+</html>

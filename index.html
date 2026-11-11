@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="An interactive English-Chinese corpus explorer for humor translation in subtitles."
+    >
+    <title>After the Punchline | English-Chinese Humor Corpus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="site/styles/styles.css">
+  </head>
+  <body data-page="explorer">
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="After the Punchline home">
+        <span class="brand-mark" aria-hidden="true">譯</span>
+        <span class="brand-copy">
+          <strong>After the Punchline</strong>
+          <span data-i18n="brandSub">English–Chinese humor corpus</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="is-current" href="index.html" data-i18n="navExplore">Explore</a>
+        <a href="report.html" data-i18n="navReport">Learning report</a>
+        <a href="codebook.html" data-i18n="navCodebook">Codebook</a>
+        <a href="ai-use.html" data-i18n="navAi">AI use</a>
+      </nav>
+      <div class="language-switch" role="group" aria-label="Interface language">
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-set-lang="zh" aria-pressed="false">繁</button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="eyebrow-line"></span>
+            <span data-i18n="heroEyebrow">A translation corpus story</span>
+          </p>
+          <h1>
+            <span data-i18n="heroTitle1">What survives</span>
+            <em data-i18n="heroTitle2">the laugh?</em>
+          </h1>
+          <p class="hero-lede" data-i18n="heroLede">
+            Five hundred English-Chinese subtitle exchanges reveal where a joke
+            is carried across intact, rephrased for effect, explained—or quietly
+            flattened.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#explorer" data-i18n="heroExplore">
+              Explore the corpus
+            </a>
+            <a class="text-link" href="report.html">
+              <span data-i18n="heroRead">Read the research</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-stage" aria-label="Corpus snapshot">
+          <div class="stage-label">
+            <span data-i18n="stageLabel">Corpus specimen</span>
+            <span>OS24-003750144</span>
+          </div>
+          <div class="joke-card">
+            <span class="joke-side">EN</span>
+            <blockquote>“Just kidding. The defense rests.”</blockquote>
+            <div class="joke-rule"></div>
+            <span class="joke-side">中文</span>
+            <blockquote lang="zh-Hant">「開個玩笑。辯護結束。」</blockquote>
+            <span class="joke-category" data-i18n="stageCategory">Direct retention</span>
+          </div>
+          <p class="stage-note" data-i18n="stageNote">
+            The pragmatic cue moves intact. The courtroom timing does the rest.
+          </p>
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <span class="hero-stamp" aria-hidden="true">
+            <span>LAUGH</span>
+            <span>TRANSLATE</span>
+            <span>COMPARE</span>
+          </span>
+        </aside>
+      </section>
+
+      <section class="data-strip" aria-label="Dataset summary">
+        <div>
+          <strong data-dataset-total>500</strong>
+          <span data-i18n="statPairs">sentence pairs</span>
+        </div>
+        <div>
+          <strong>22.4M</strong>
+          <span data-i18n="statFrame">source frame</span>
+        </div>
+        <div>
+          <strong>4</strong>
+          <span data-i18n="statStrategies">strategy categories</span>
+        </div>
+        <div>
+          <strong data-dataset-checked>50</strong>
+          <span data-i18n="statChecked">source checked</span>
+        </div>
+      </section>
+
+      <section class="explorer-section" id="explorer">
+        <div class="section-heading">
+          <div>
+            <p class="section-index">01 / 04</p>
+            <h2 data-i18n="exploreTitle">Read the corpus like a translator</h2>
+          </div>
+          <p data-i18n="exploreIntro">
+            Search both languages, narrow the dataset, then follow a cue through
+            every linked view.
+          </p>
+        </div>
+
+        <div class="control-panel">
+          <label class="search-field" for="search">
+            <span class="sr-only" data-i18n="searchLabel">Search the corpus</span>
+            <span class="search-icon" aria-hidden="true"></span>
+            <input
+              id="search"
+              type="search"
+              autocomplete="off"
+              data-i18n-placeholder="searchPlaceholder"
+              placeholder="Search joke, laugh, 笑, 玩笑..."
+            >
+            <kbd>/</kbd>
+          </label>
+
+          <label class="select-field" for="category">
+            <span data-i18n="filterCategory">Translation strategy</span>
+            <select id="category">
+              <option value="" data-i18n="allStrategies">All strategies</option>
+              <option value="direct-retention" data-i18n="catDirectShort">
+                Direct retention
+              </option>
+              <option value="functional-equivalence" data-i18n="catFunctionalShort">
+                Functional equivalence
+              </option>
+              <option value="explicitation" data-i18n="catExplicitShort">
+                Explicitation
+              </option>
+              <option
+                value="compression-neutralization"
+                data-i18n="catCompressionShort"
+              >
+                Compression / neutralization
+              </option>
+            </select>
+          </label>
+
+          <label class="select-field" for="cue">
+            <span data-i18n="filterCue">Humor cue</span>
+            <select id="cue">
+              <option value="" data-i18n="allCues">All cues</option>
+              <option value="joke" data-i18n="cueJoke">Joke / kidding</option>
+              <option value="laughter" data-i18n="cueLaughter">
+                Laughter
+              </option>
+              <option value="funny" data-i18n="cueFunny">Funny / absurd</option>
+              <option value="play_signal" data-i18n="cuePlay">
+                Play signal
+              </option>
+            </select>
+          </label>
+
+          <label class="check-filter" for="checked-only">
+            <input id="checked-only" type="checkbox">
+            <span class="switch" aria-hidden="true"></span>
+            <span data-i18n="filterChecked">Checked entries only</span>
+          </label>
+
+          <button class="reset-button" id="reset-filters" type="button">
+            <span data-i18n="resetFilters">Reset</span>
+            <span aria-hidden="true">↺</span>
+          </button>
+        </div>
+
+        <div class="result-bar">
+          <p>
+            <strong id="result-count">500</strong>
+            <span data-i18n="resultsShown">entries match this view</span>
+          </p>
+          <div class="active-filters" id="active-filters"></div>
+        </div>
+      </section>
+
+      <section class="visual-grid" aria-label="Interactive visualizations">
+        <article class="viz-card viz-sankey">
+          <div class="viz-heading">
+            <div>
+              <p class="viz-number">A</p>
+              <h3 data-i18n="sankeyTitle">From cue to strategy</h3>
+            </div>
+            <span class="viz-kind" data-i18n="sankeyKind">Sankey flow</span>
+          </div>
+          <p class="viz-caption" data-i18n="sankeyCaption">
+            Which translation strategy most often carries each kind of humor cue?
+          </p>
+          <div
+            class="chart chart-sankey"
+            id="sankey-chart"
+            role="img"
+            aria-label="Sankey diagram from humor cue to translation strategy"
+          ></div>
+          <p class="interaction-hint" data-i18n="clickFlow">
+            Click a band or node to filter the corpus.
+          </p>
+        </article>
+
+        <article class="viz-card viz-heatmap">
+          <div class="viz-heading">
+            <div>
+              <p class="viz-number">B</p>
+              <h3 data-i18n="heatTitle">Where the pressure falls</h3>
+            </div>
+            <fieldset class="segmented-control">
+              <legend class="sr-only" data-i18n="heatMode">Heatmap mode</legend>
+              <button class="is-active" type="button" data-heat-mode="count">
+                <span data-i18n="heatCount">Count</span>
+              </button>
+              <button type="button" data-heat-mode="row">
+                <span data-i18n="heatRow">Row %</span>
+              </button>
+            </fieldset>
+          </div>
+          <p class="viz-caption" data-i18n="heatCaption">
+            How does each humor cue distribute across the four translation
+            strategies?
+          </p>
+          <div
+            class="chart chart-heatmap"
+            id="heatmap-chart"
+            role="img"
+            aria-label="Heatmap of humor cue by translation strategy"
+          ></div>
+          <p class="interaction-hint" data-i18n="clickCell">
+            Click a cell to isolate that cue-strategy pairing.
+          </p>
+        </article>
+
+        <article class="viz-card viz-network">
+          <div class="viz-heading">
+            <div>
+              <p class="viz-number">C</p>
+              <h3 data-i18n="networkTitle">The translation network</h3>
+            </div>
+            <span class="viz-kind" data-i18n="networkKind">Force network</span>
+          </div>
+          <p class="viz-caption" data-i18n="networkCaption">
+            Which English humor cues connect most often to which Chinese cue
+            families?
+          </p>
+          <div class="network-controls">
+            <label for="network-limit">
+              <span data-i18n="networkNodes">Top links</span>
+              <output id="network-limit-value">24</output>
+            </label>
+            <input
+              id="network-limit"
+              type="range"
+              min="8"
+              max="40"
+              step="4"
+              value="24"
+            >
+            <label for="network-weight">
+              <span data-i18n="minimumLink">Minimum link weight</span>
+              <output id="network-weight-value">1</output>
+            </label>
+            <input
+              id="network-weight"
+              type="range"
+              min="1"
+              max="30"
+              step="1"
+              value="1"
+            >
+            <button id="network-reheat" class="mini-button" type="button">
+              <span data-i18n="reheat">Reheat</span>
+              <span aria-hidden="true">↻</span>
+            </button>
+          </div>
+          <div
+            class="chart chart-network"
+            id="network-chart"
+            role="img"
+            aria-label="Interactive network of English and Chinese humor cues"
+          ></div>
+          <p class="interaction-hint" data-i18n="networkHint">
+            Drag nodes, scroll to zoom, or click a term to search it.
+          </p>
+        </article>
+      </section>
+
+      <section class="table-section">
+        <div class="section-heading table-heading">
+          <div>
+            <p class="section-index">04 / 04</p>
+            <h2 data-i18n="tableTitle">Every line has a trail</h2>
+          </div>
+          <div class="table-actions">
+            <p data-i18n="tableIntro">
+              Sort the evidence, inspect the source, or export the current view.
+            </p>
+            <button class="button button-outline" id="export-csv" type="button">
+              <span data-i18n="exportCsv">Export current CSV</span>
+              <span aria-hidden="true">↓</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="table-shell">
+          <div class="table-scroll">
+            <table class="corpus-table">
+              <thead>
+                <tr>
+                  <th>
+                    <button type="button" data-sort="source_text">
+                      <span data-i18n="columnEnglish">English</span>
+                      <span class="sort-mark"></span>
+                    </button>
+                  </th>
+                  <th>
+                    <button type="button" data-sort="target_text">
+                      <span data-i18n="columnChinese">Chinese</span>
+                      <span class="sort-mark"></span>
+                    </button>
+                  </th>
+                  <th>
+                    <button type="button" data-sort="category">
+                      <span data-i18n="columnStrategy">Strategy</span>
+                      <span class="sort-mark"></span>
+                    </button>
+                  </th>
+                  <th>
+                    <button type="button" data-sort="human_checked">
+                      <span data-i18n="columnChecked">Check</span>
+                      <span class="sort-mark"></span>
+                    </button>
+                  </th>
+                  <th>
+                    <span data-i18n="columnSource">Trace</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="corpus-body"></tbody>
+            </table>
+          </div>
+          <div id="empty-state" class="empty-state" hidden>
+            <span aria-hidden="true">∅</span>
+            <h3 data-i18n="emptyTitle">No lines meet this pairing.</h3>
+            <p data-i18n="emptyBody">Reset a filter and try another cue.</p>
+            <button class="text-link" type="button" id="empty-reset">
+              <span data-i18n="resetFilters">Reset</span>
+              <span aria-hidden="true">↺</span>
+            </button>
+          </div>
+          <div class="pagination">
+            <button id="prev-page" type="button">
+              <span aria-hidden="true">←</span>
+              <span data-i18n="previous">Previous</span>
+            </button>
+            <span id="page-status">1 / 20</span>
+            <button id="next-page" type="button">
+              <span data-i18n="next">Next</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <span class="footer-mark" aria-hidden="true">譯</span>
+        <h2>After the Punchline</h2>
+        <p data-i18n="footerLine">
+          English–Chinese humor translation in subtitles.
+        </p>
+      </div>
+      <div class="footer-meta">
+        <p>
+          <span data-i18n="sourceLabel">Source</span>
+          <a href="https://opus.nlpl.eu/legacy/OpenSubtitles-v2024.php">
+            OpenSubtitles v2024 / OPUS
+          </a>
+        </p>
+        <p>
+          TRAN3620 Translation Technology in the Age of AI · 2026
+        </p>
+        <p>
+          <span data-i18n="retrievedLabel">Collected</span> 10 Nov 2026 ·
+          <span data-i18n="seedLabel">seed</span> 3620
+        </p>
+      </div>
+    </footer>
+
+    <script src="site/assets/d3.v7.min.js"></script>
+    <script src="site/assets/d3-sankey.v0.12.3.min.js"></script>
+    <script src="site/scripts/i18n.js"></script>
+    <script src="site/scripts/app.js"></script>
+  </body>
+</html>
